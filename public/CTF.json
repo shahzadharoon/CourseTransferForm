@@ -1,0 +1,3056 @@
+﻿[
+  {
+    "code": "CS1101",
+    "course": "Introduction to Computers",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1102",
+    "course": "Calculus and Analytical Geometry-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1102",
+    "course": "Calculus and Analytical Geometry",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1103",
+    "course": "Physics-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1104",
+    "course": "Probability and Statistics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1105",
+    "course": "Programming Languages-I",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1106",
+    "course": "English Writing Skills",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1107",
+    "course": "Personal Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1108",
+    "course": "Object Oriented Programming",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1109",
+    "course": "Introduction to Computers and Internet",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1111",
+    "course": "English Composition and Comprehension",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1114",
+    "course": "Introduction to Computer Sciences",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS1117",
+    "course": "Introduction to Computing",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1118",
+    "course": "Fundamentals of Programming",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS1201",
+    "course": "Programming Languages-II",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1202",
+    "course": "Graphic Design in Multimedia Presentations",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1203",
+    "course": "Physics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1204",
+    "course": "Calculus and Analytical Geometry-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1205",
+    "course": "Oral Communication and Presentation Skills",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1206",
+    "course": "Islamiat and Pakistan Studies / Humanities",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1207",
+    "course": "Management Principles",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1208",
+    "course": "Gaming Techniques",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1209",
+    "course": "Programming Fundamentals",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1211",
+    "course": "Technical and Business Writing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1212",
+    "course": "Statistics and Probability",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1213",
+    "course": "Introduction to IT",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS1214",
+    "course": "Introduction to Information and Communication Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS1215",
+    "course": "Physics and Basic Electronics",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS1218",
+    "course": "Physics-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2301",
+    "course": "Algorithms and Data Structures",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2302",
+    "course": "Computer Networks and Data Communication",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2303",
+    "course": "Operating Systems",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS2304",
+    "course": "Digital Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2305",
+    "course": "Linear Algebra and Differential Equations",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2306",
+    "course": "Logic",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2307",
+    "course": "Marketing Principles",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2308",
+    "course": "Electronics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2309",
+    "course": "Algorithms and Data Structures",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS2311",
+    "course": "Communication and Presentation Skills",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2312",
+    "course": "Digital Logic and Computer Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2313",
+    "course": "Data Structures and Algorithms",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS2314",
+    "course": "Finite Automata Theory and Formal Languages",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2315",
+    "course": "Web Engineering",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS2316",
+    "course": "Family Studies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2317",
+    "course": "Digital Logic Design",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS2318",
+    "course": "Operating Systems Concepts",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS2321",
+    "course": "Linear Algebra and Differential Equations",
+    "theory": "4",
+    "lab": "0"
+  },
+  {
+    "code": "CS2401",
+    "course": "Higher Level Programming Languages-I",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS2402",
+    "course": "Database Management Systems",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS2403",
+    "course": "Computer Organization",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2404",
+    "course": "Telecommunications",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2404",
+    "course": "Numerical Analysis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2405",
+    "course": "Technical Report Writing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2406",
+    "course": "Foreign Languages",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2406",
+    "course": "Social Sciences",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2407",
+    "course": "Numerical Analysis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2408",
+    "course": "Introduction to Accounting",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2409",
+    "course": "Document Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2411",
+    "course": "Computer Organization and Assembly Language",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS2412",
+    "course": "Database Systems",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS2413",
+    "course": "Linear Algebra and Applications",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2414",
+    "course": "Multivariate Calculus",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2415",
+    "course": "Human Computer Interaction",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS2416",
+    "course": "Software Construction",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS2417",
+    "course": "Introduction to Software Development",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS2418",
+    "course": "Computer Data Communications and Networks",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS2421",
+    "course": "Relational Database Systems",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS3501",
+    "course": "Higher Level Programming Languages-II",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3502",
+    "course": "Assembly Language Programming",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3503",
+    "course": "Web Technologies-I",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3504",
+    "course": "Software Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3505",
+    "course": "Discrete Mathematical Structures",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3506",
+    "course": "Business Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3506",
+    "course": "Management Principles",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3507",
+    "course": "Computer Architecture and Organization",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3508",
+    "course": "Human Geography",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3509",
+    "course": "Economics of Technology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3513",
+    "course": "Software Design and Architecture",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3514",
+    "course": "Differential Equations",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3515",
+    "course": "History of Scientific Ideas",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3516",
+    "course": "Computer Graphics",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3517",
+    "course": "Software Engineering Concepts",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS3521",
+    "course": "Computer Architecture",
+    "theory": "3",
+    "lab": "1"
+  },
+  {
+    "code": "CS3601",
+    "course": "Numerical Analysis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3602",
+    "course": "Finite Automata Theory",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3603",
+    "course": "Web Technologies-II",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3604",
+    "course": "Systems Analysis and Design",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3605",
+    "course": "Social Sciences",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3606",
+    "course": "Accounting",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3607",
+    "course": "Advanced Web Technologies",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3608",
+    "course": "Business and Technology Ethics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3609",
+    "course": "Design and Creativity",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3611",
+    "course": "Analysis of Algorithms",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3612",
+    "course": "Software Engineering-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3613",
+    "course": "Network Management and Security",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3614",
+    "course": "Organizational Behavior",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3615",
+    "course": "Software Requirements Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3616",
+    "course": "Systems Programming",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS3619",
+    "course": "Numerical and Symbolic Computation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3621",
+    "course": "Software Quality Assurance",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS3624",
+    "course": "Compiler Construction",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4511",
+    "course": "IT Innovations",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4515",
+    "course": "Advanced Computer Networking",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4516",
+    "course": "Applied Data Mining",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4517",
+    "course": "Embedded Programming",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4518",
+    "course": "Online Presence",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4521",
+    "course": "Gaming Techniques",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4611",
+    "course": "Tele-Medicine",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4614",
+    "course": "Distributed Database",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4615",
+    "course": "Android Application Development",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4616",
+    "course": "Advance Internet Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4617",
+    "course": "iOS Development",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4618",
+    "course": "Social Network Analysis",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4619",
+    "course": "Data Warehouse Techniques",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4621",
+    "course": "Internet Programming",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4622",
+    "course": "Game Development",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4701",
+    "course": "Business Finance",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4702",
+    "course": "Artificial Intelligence",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4704",
+    "course": "Project-I",
+    "theory": "0",
+    "lab": "3"
+  },
+  {
+    "code": "CS4705",
+    "course": "Operations Research",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4706",
+    "course": "Emerging Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4711",
+    "course": "Software Project Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4713",
+    "course": "Technology Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4719",
+    "course": "Messaging and Communication Technologies",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4723",
+    "course": "Systems Administration",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4726",
+    "course": "Database Administration-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4727",
+    "course": "Artificial Intelligence",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4729",
+    "course": "Advanced Telecommunication Technologies ",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4731",
+    "course": "Internet Business Models",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4732",
+    "course": "Software Quality Assurance",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4734",
+    "course": "Enterprise Solutions Architecture",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4735",
+    "course": "Automation and Robotics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4736",
+    "course": "Entrepreneurship",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4737",
+    "course": "Special Topics in Media Sciences",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4738",
+    "course": "Object Oriented Analysis and Design",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4741",
+    "course": "Advanced Topics in Computing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4742",
+    "course": "Managing Data-Center Projects",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4745",
+    "course": "Linux Administrator-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4746",
+    "course": "Oracle Administration-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4754",
+    "course": "IT Project Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4756",
+    "course": "Graphic Design and 3D Animation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4759",
+    "course": "Control Systems",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4769",
+    "course": "Business Process Re-engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4771",
+    "course": "DNA Computing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4777",
+    "course": "Information Security and Cryptography",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4788",
+    "course": "Foreign Languages",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4793",
+    "course": "Voice Over IP",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4794",
+    "course": "Bioinformatics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4796",
+    "course": "Information Security",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4802",
+    "course": "Research Report",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4803",
+    "course": "Strategic Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4804",
+    "course": "Project-II",
+    "theory": "0",
+    "lab": "3"
+  },
+  {
+    "code": "CS4805",
+    "course": "Professional Practices",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4814",
+    "course": "Mobile Ad Hoc Networks",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4815",
+    "course": "Technopreneruship",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4816",
+    "course": "Enterprise Resource Planning",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4818",
+    "course": "Enterprise Information System",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4819",
+    "course": "Business and Technology Ethics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4825",
+    "course": "Switching and Routing",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4826",
+    "course": "Database Administration-II",
+    "theory": "1",
+    "lab": "2"
+  },
+  {
+    "code": "CS4827",
+    "course": "Wireless and Mobile Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4828",
+    "course": "Auditing Information Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4829",
+    "course": "Introduction to Grid Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4832",
+    "course": "Network Security and Cryptography",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4833",
+    "course": "Technology Innovation and Design",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4834",
+    "course": "Technology Risk Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4835",
+    "course": "Distributed Operating Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4837",
+    "course": "Advanced Programming Techniques",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4838",
+    "course": "Network Security and Encryption",
+    "theory": "1",
+    "lab": "2"
+  },
+  {
+    "code": "CS4839",
+    "course": "Business Process Management Systems",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4844",
+    "course": "Ethical Hacking",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4845",
+    "course": "Linux Administrator-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4846",
+    "course": "Oracle Administration-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4847",
+    "course": "Data Warehousing and Mining",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4876",
+    "course": "Advance Data Warehousing Techniques",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4878",
+    "course": "Mechatronics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4879",
+    "course": "Data Sciences",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4881",
+    "course": "Network Protocol",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4888",
+    "course": "Information Retrieval",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4897",
+    "course": "Internet Working Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4919",
+    "course": "Digital Image Processing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4925",
+    "course": "Embedded Programming",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4927",
+    "course": "Information Security and Cryptography",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4929",
+    "course": "Internet Programming",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4932",
+    "course": "Mechatronics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4934",
+    "course": ".NET Technology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4944",
+    "course": "Internet Programming using .NET Technology",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4945",
+    "course": "e-Business Economics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4946",
+    "course": "Cryptography",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4947",
+    "course": ".NET and Pattern Design",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4948",
+    "course": "Capability Maturity Model Integration",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4949",
+    "course": "Multimedia Database",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4951",
+    "course": "Electronic Payment Systems",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS4952",
+    "course": "Data Warehouse Techniques",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4953",
+    "course": "Information Security Management Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4954",
+    "course": "Business Continuity Planning and Disaster Recovery",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4955",
+    "course": "Introduction to IT Infrastructure",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4956",
+    "course": "Network Management and Security",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4957",
+    "course": "System Administration",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS4958",
+    "course": "Multimedia Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5101",
+    "course": "Advanced Algorithms Analysis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5101",
+    "course": "Mathematical Techniques in Software Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5102",
+    "course": "Theory of Computation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5102",
+    "course": "Advance Mobile Communication",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5104",
+    "course": "Advanced Computer Networking",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5104",
+    "course": "Advanced Computer Networking",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5105",
+    "course": "Research Methodology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5106",
+    "course": "Modeling and Simulation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5107",
+    "course": "Capability Maturity Model for Software Development",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5108",
+    "course": "Independent Study-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5108",
+    "course": "Independent Study-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5109",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5109",
+    "course": "Thesis",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS5115",
+    "course": "Radio Frequency Identification Technology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5116",
+    "course": "Grid Computing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5117",
+    "course": "Information System Audit and Security",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5122",
+    "course": "Capability Maturity Model Integration",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5123",
+    "course": "Bioinformatics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5125",
+    "course": "RFID Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5127",
+    "course": "Wireless Technologies and Application",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5128",
+    "course": "Digital Image Processing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5129",
+    "course": "Business Intelligence",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5137",
+    "course": "Robotics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5138",
+    "course": "Cryptography",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5139",
+    "course": "Software Requirement Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5141",
+    "course": "Electronic Payment Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5142",
+    "course": "Advanced Database Systems",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5143",
+    "course": "Reverse Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5148",
+    "course": "Knowledge Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5149",
+    "course": "Software System Design and Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5151",
+    "course": "Distributed Database",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5152",
+    "course": "Advanced Databases",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5153",
+    "course": "Technology Sales",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5154",
+    "course": "Planning and Disaster Recovery",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5155",
+    "course": "Cluster Computing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5156",
+    "course": "Mobile Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5157",
+    "course": "Data Warehousing and Business Intelligence",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5159",
+    "course": "Machine Learning",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5164",
+    "course": "Enterprise Resource Planning",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5166",
+    "course": "Business Intelligence ERP",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5167",
+    "course": "Information Technology Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5168",
+    "course": "Advanced Internet Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5171",
+    "course": "Advanced Database Design",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5172",
+    "course": "Computer Vision",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5201",
+    "course": "Advanced Operating Systems",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5202",
+    "course": "Advanced Computer Architecture",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5202",
+    "course": "Networking Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5203",
+    "course": "Advanced Database Techniques",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5205",
+    "course": "Multi-Agent Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5206",
+    "course": "Broadband Communications",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5207",
+    "course": "Electronic Business Transaction",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5208",
+    "course": "Independent Study-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5209",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5209",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5212",
+    "course": "Information Theory",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5213",
+    "course": "CDMA",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5214",
+    "course": "Strategic Information Management Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5215",
+    "course": "Design Pattern",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5216",
+    "course": "Networking Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5217",
+    "course": "Business Process Re-engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5221",
+    "course": "Research Topics in Software Engineering",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5222",
+    "course": "Knowledge Based Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5223",
+    "course": "Business Continuity Planning and Disaster Recovery",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5224",
+    "course": "Data Mining",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5225",
+    "course": "Network Design Management",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5226",
+    "course": "Storage Technologies (SAN) and DM",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5227",
+    "course": "Network Security",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5228",
+    "course": "Advanced Telecom Technologies",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5229",
+    "course": "e-Enterprise Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5234",
+    "course": "Wireless Communication",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5237",
+    "course": "Neural Networks",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5238",
+    "course": "Technology Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5241",
+    "course": "IT Infrastructure Library",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5243",
+    "course": "Teletraffic",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5246",
+    "course": "Multi-Agent Systems",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5246",
+    "course": "Multi-Agent Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5252",
+    "course": "Advanced Routing and Switching",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5253",
+    "course": "DNA Computing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5255",
+    "course": "Usability Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5264",
+    "course": "Theory of Programming Languages",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5265",
+    "course": "Metro Ethernet Networks",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5266",
+    "course": "Artificial Intelligence",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5273",
+    "course": "Human Computer Interaction",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5302",
+    "course": "Expert Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5303",
+    "course": "Advance Data Mining Technique",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5304",
+    "course": "Satellite Communication",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5305",
+    "course": "Speech Recognition Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5306",
+    "course": "Management Cybernatics Concepts",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5307",
+    "course": "Advance Research Topics in LINUX",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5308",
+    "course": "Independent Study-III",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5309",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5401",
+    "course": "Information System Audit and Control",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5402",
+    "course": "Advance Digital Image Processing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5403",
+    "course": "Network Security and Audit",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5404",
+    "course": "Research Topics in Computer Network",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5405",
+    "course": "Research Topics in Project Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5406",
+    "course": "Mathematical Techniques for Computer Networks",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5407",
+    "course": "Capability Maturity Model Integration",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5408",
+    "course": "Independent Study-IV",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5409",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5417",
+    "course": "Research Thesis",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS5501",
+    "course": "Advance Data Warehousing Techniques",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5502",
+    "course": "Networking Security",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5503",
+    "course": "Research Topics in Technology Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5504",
+    "course": "Internet Business Model and Strategies",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5506",
+    "course": "Information System and Audit",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CS5509",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS5609",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6101",
+    "course": "Research Methodology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6108",
+    "course": "Independent Study-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6109",
+    "course": "Dissertation",
+    "theory": "1",
+    "lab": "0"
+  },
+  {
+    "code": "CS6109",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS6109",
+    "course": "Dissertation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6208",
+    "course": "Independent Study-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6209",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS6209",
+    "course": "Dissertation",
+    "theory": "1",
+    "lab": "0"
+  },
+  {
+    "code": "CS6209",
+    "course": "Dissertation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6308",
+    "course": "Independent Study-III",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6309",
+    "course": "Dissertation",
+    "theory": "1",
+    "lab": "0"
+  },
+  {
+    "code": "CS6309",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS6309",
+    "course": "Dissertation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6408",
+    "course": "Independent Study-IV",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6409",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS6409",
+    "course": "Dissertation",
+    "theory": "1",
+    "lab": "0"
+  },
+  {
+    "code": "CS6409",
+    "course": "Dissertation",
+    "theory": "9",
+    "lab": "0"
+  },
+  {
+    "code": "CS6409",
+    "course": "Dissertation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6509",
+    "course": "Dissertation",
+    "theory": "9",
+    "lab": "0"
+  },
+  {
+    "code": "CS6509",
+    "course": "Dissertation",
+    "theory": "1",
+    "lab": "0"
+  },
+  {
+    "code": "CS6509",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS6609",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS6609",
+    "course": "Dissertation",
+    "theory": "1",
+    "lab": "0"
+  },
+  {
+    "code": "CS6609",
+    "course": "Dissertation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CS6709",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS6709",
+    "course": "Dissertation",
+    "theory": "1",
+    "lab": "0"
+  },
+  {
+    "code": "CS6809",
+    "course": "Dissertation",
+    "theory": "1",
+    "lab": "0"
+  },
+  {
+    "code": "CS6809",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS6909",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CS6909",
+    "course": "Dissertation",
+    "theory": "1",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1101",
+    "course": "Calculus and Analytical Geometry",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1102",
+    "course": "English Composition and Comprehension",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1103",
+    "course": "Fundamentals of Programming",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1104",
+    "course": "Introduction to Computing",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CSC1105",
+    "course": "Islamiat and Pakistan Studies / Humanities",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1107",
+    "course": "Applied Physics",
+    "theory": "2",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1108",
+    "course": "Introduction to Computer Science",
+    "theory": "2",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1201",
+    "course": "Discrete Mathematical Structures",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1202",
+    "course": "Multivariate Calculus",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1203",
+    "course": "Object Oriented Programming",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "CSC1204",
+    "course": "Physics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1205",
+    "course": "Technical and Business Writing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC1208",
+    "course": "Object Oriented Programming Techniques",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2101",
+    "course": "Communication and Presentation Skills",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2101",
+    "course": "Communication and Presentation Skills",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2102",
+    "course": "Data Structures and Algorithms",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2103",
+    "course": "Digital Logic Design",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2104",
+    "course": "Linear Algebra and Differential Equations",
+    "theory": "4",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2105",
+    "course": "Statistics and Probability",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2122",
+    "course": "Differential Equationsa",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2201",
+    "course": "Computer Organization and Assembly Language",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2202",
+    "course": "Data Communications and Computer Networks",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2203",
+    "course": "Database Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2204",
+    "course": "Finite Automata Theory and Formal Languages ",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC2205",
+    "course": "Operating Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC3101",
+    "course": "Computer Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC3102",
+    "course": "Human Computer Interaction",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC3103",
+    "course": "Introduction to Software Development",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC3104",
+    "course": "Software Engineering-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC3201",
+    "course": "Compiler Construction",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC3202",
+    "course": "Design and Analysis of Algorithms",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC3203",
+    "course": "Numerical Computing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4101",
+    "course": "Artificial Intelligence",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4102",
+    "course": "Professional Practices",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4105",
+    "course": "Final Year Project-I",
+    "theory": "0",
+    "lab": "3"
+  },
+  {
+    "code": "CSC4202",
+    "course": "Pakistan and Islamic Studies / Humanities",
+    "theory": "4",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4205",
+    "course": "Final Year Project-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4502",
+    "course": "Design and Creativity",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4503",
+    "course": "Introduction to Accounting",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4505",
+    "course": "Systems Administration",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4506",
+    "course": "Web Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4601",
+    "course": "Foreign Languages",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4604",
+    "course": "Research Report",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4605",
+    "course": "Sociology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4606",
+    "course": "Psychology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4716",
+    "course": "Switching and Routing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4717",
+    "course": "Web Technologies-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4718",
+    "course": "Wireless and Mobile Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4719",
+    "course": "Game Development",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4721",
+    "course": "Introduction to Cloud Computing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4802",
+    "course": "Android Application Development",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4805",
+    "course": "Data and Network Security",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4807",
+    "course": "Embedded Programming",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4808",
+    "course": "Ethical Hacking",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4809",
+    "course": "iOS Development",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4814",
+    "course": "Software Project Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4815",
+    "course": "Software Engineering-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4817",
+    "course": "Web Technologies-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4818",
+    "course": "Data Sciences",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4819",
+    "course": "Graphic Design and 3D Animation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC4821",
+    "course": "Online Presence",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5101",
+    "course": "Advanced Algorithms Analysis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5102",
+    "course": "Theory of Computation",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5105",
+    "course": "Research Methodology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5109",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5161",
+    "course": "Machine Learning",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5162",
+    "course": "Digital Image Processing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5163",
+    "course": "Data Mining",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5164",
+    "course": "Real-Time Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5201",
+    "course": "Advanced Operating Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5202",
+    "course": "Advanced Computer Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5204",
+    "course": "Independent Research Study",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5207",
+    "course": "Research Thesis",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5208",
+    "course": "Independent Study",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5209",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5261",
+    "course": "Advanced Database Design",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5262",
+    "course": "Computer Vision",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5264",
+    "course": "Expert Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC5308",
+    "course": "Independent Research Study-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC6101",
+    "course": "Research Methodology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC6104",
+    "course": "Independent Research Study-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC6108",
+    "course": "Independent Study-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC6109",
+    "course": "Dissertation",
+    "theory": "6",
+    "lab": "0"
+  },
+  {
+    "code": "CSC6204",
+    "course": "Independent Research Study-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSC6208",
+    "course": "Independent Study-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "CSCL1103",
+    "course": "Lab: Fundamentals of Programming ",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL1107",
+    "course": "Lab: Applied Physics",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL1108",
+    "course": "Lab: Introduction to Computer Science",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL1204",
+    "course": "Lab: Physics",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL1208",
+    "course": "Lab: Object Oriented Programming Techniques",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL2102",
+    "course": "Lab: Data Structures and Algorithms",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL2103",
+    "course": "Lab: Digital Logic Design",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL2103",
+    "course": "Lab: Digital Logic Design",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL2201",
+    "course": "Lab:  Computer Organization and Assembly Language",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL2202",
+    "course": "Lab: Data Communications and Computer Networks",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL2203",
+    "course": "Lab: Database Systems",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL2205",
+    "course": "Lab: Operating Systems",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL3103",
+    "course": "Lab: Introduction to Software Development",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "CSCL3104",
+    "course": "Lab: Software Engineering-I",
+    "theory": "0",
+    "lab": "1"
+  },
+  {
+    "code": "NSC5161",
+    "course": "Advanced Computer Networks",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "NSC5162",
+    "course": "Information Security",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "NSC5163",
+    "course": "Network Security",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "NSC5164",
+    "course": "Applied Cryptography",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "NSC5204",
+    "course": "Independent Research Study",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "NSC5208",
+    "course": "Independent Study",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "NSC5261",
+    "course": "Wireless Sensor Networks",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "NSC5308",
+    "course": "Independent Research Study-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5101",
+    "course": "Software Requirement Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5102",
+    "course": "Software System Design and Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5105",
+    "course": "Research Methodology",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5108",
+    "course": "Independent Study-I",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5109",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5115",
+    "course": "Radio Frequency Identification Technology",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "SE5117",
+    "course": "Information System Audit and Security",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5122",
+    "course": "Capability Maturity Model Integration",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5123",
+    "course": "Bioinformatics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5125",
+    "course": "RFID Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5127",
+    "course": "Wireless Technologies and Application",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5128",
+    "course": "Digital Image Processing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5137",
+    "course": "Robotics",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5141",
+    "course": "Electronic Payment Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5143",
+    "course": "Reverse Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5148",
+    "course": "Knowledge Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5152",
+    "course": "Advanced Databases",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5152",
+    "course": "Distributed Database",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5153",
+    "course": "Technology Sales",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5154",
+    "course": "Planning and Disaster Recovery",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5155",
+    "course": "Cluster Computing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5156",
+    "course": "Mobile Technologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5157",
+    "course": "Data Warehousing and Business Intelligence",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5164",
+    "course": "Enterprise Resource Planning",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5168",
+    "course": "Advanced Internet Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5201",
+    "course": "Software Project Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5202",
+    "course": "Software Quality Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5206",
+    "course": "Broadband Communications",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5208",
+    "course": "Independent Study-II",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5209",
+    "course": "Thesis",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5211",
+    "course": "Multimedia Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5216",
+    "course": "Networking Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5217",
+    "course": "Business Process Re-engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5218",
+    "course": "Software System Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5222",
+    "course": "Knowledge Based Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5223",
+    "course": "Business Continuity Planning and Disaster Recovery",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5224",
+    "course": "Data Mining",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5226",
+    "course": "Storage Technologies (SAN) and DM",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5227",
+    "course": "Network Security",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "SE5237",
+    "course": "Neural Networks",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5238",
+    "course": "Technology Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5241",
+    "course": "IT Infrastructure Library",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5243",
+    "course": "Teletraffic",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5253",
+    "course": "DNA Computing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5255",
+    "course": "Usability Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5265",
+    "course": "Metro Ethernet Networks",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5266",
+    "course": "Artificial Intelligence",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5273",
+    "course": "Human Computer Interaction",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5506",
+    "course": "Information System and Audit",
+    "theory": "2",
+    "lab": "1"
+  },
+  {
+    "code": "SE5615",
+    "course": "Software System Quality",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5616",
+    "course": "Software Analysis and Testing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5721",
+    "course": "Mathematical Techniques",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5725",
+    "course": "Quality Information Systems",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SE5732",
+    "course": "Software Development Methodologies",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5161",
+    "course": "Software System Architecture",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5162",
+    "course": "Advanced Software Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5163",
+    "course": "Software Requirement Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5164",
+    "course": "Software System Quality",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5204",
+    "course": "Independent Research Study",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5208",
+    "course": "Independent Study",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5261",
+    "course": "Software Analysis and Testing",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5262",
+    "course": "Software Project Management",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5263",
+    "course": "Web Engineering",
+    "theory": "3",
+    "lab": "0"
+  },
+  {
+    "code": "SEC5308",
+    "course": "Independent Research Study-I",
+    "theory": "3",
+    "lab": "0"
+  }
+]

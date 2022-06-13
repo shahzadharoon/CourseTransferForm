@@ -1,0 +1,53 @@
+[
+    {
+        "std": {
+            "code": "CS1101",
+            "course": "Introduction to Computers",
+            "crhr": "2, 1",
+            "grade": "A+"
+        },
+        "cord": {
+            "code": "CSC1104",
+            "course": "Introduction to Computing",
+            "theory": "2",
+            "lab": "1",
+            "id": 341,
+            "value": "CSC1104 Introduction to Computing  (2, 1)",
+            "label": "CSC1104 Introduction to Computing  (2, 1)"
+        }
+    },
+    {
+        "std": {
+            "code": "CS1102",
+            "course": "Calculus and Analytical Geometry",
+            "crhr": "3, 0",
+            "grade": "B+"
+        },
+        "cord": {
+            "code": "CSC1101",
+            "course": "Calculus and Analytical Geometry",
+            "theory": "3",
+            "lab": "0",
+            "id": 338,
+            "value": "CSC1101 Calculus and Analytical Geometry  (3, 0)",
+            "label": "CSC1101 Calculus and Analytical Geometry  (3, 0)"
+        }
+    },
+    {
+        "std": {
+            "code": "CS1118",
+            "course": "Fundamentals of Programming",
+            "crhr": "3, 1",
+            "grade": "C"
+        },
+        "cord": {
+            "code": "CSC1103",
+            "course": "Fundamentals of Programming",
+            "theory": "3",
+            "lab": "0",
+            "id": 340,
+            "value": "CSC1103 Fundamentals of Programming  (3, 0)",
+            "label": "CSC1103 Fundamentals of Programming  (3, 0)"
+        }
+    }
+]

@@ -1,0 +1,945 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Generator" content="Microsoft Word 15 (filtered)">  
+
+    <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script type="text/javascript" src="/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/javascripts/underscore.js"></script>
+  <style>
+      table{
+        border-collapse:collapse;
+      }
+      input[type=text]{
+          height: 18px;
+      }
+      .logo{
+        font-size:25.0pt;
+        font-weight: bold;
+        font-family:'Bazooka';
+        vertical-align: top;
+      }
+
+      .spc{
+        margin: 0 0 0 0;
+      }
+
+      .pad{
+        padding:0in 5.4pt 0in 5.4pt;
+      }
+
+      .fld{
+          vertical-align: bottom;
+          font-family:'Times New Roman'
+      }
+      .txt{
+        font-family:'Centaur';
+        border: none;
+        border-bottom: 1pt solid black;
+        text-align: center;
+      }
+      .tdx{
+        vertical-align: bottom;
+      }
+      .mar{
+        margin-bottom:0in;
+        margin-bottom:.0001pt;
+        line-height:normal;
+      }
+      .f-lg{
+        font-size: 14.0pt;
+      }
+      .ctrl{
+          text-align: center;
+          border: 0px;
+          position: relative
+      }
+      .f-nr{
+        font-size: 12.0pt;
+      }
+      .f-sm{
+        font-size: 10.0pt;
+      }
+      .f-xs{
+        font-size: 8.5.0pt;
+      }
+      .box{
+        border:1.0pt solid black;
+  
+      }
+      .CTFHd{
+        text-align: center;
+        font-size: 14.0pt;
+        font-family:'Times New Roman';  
+        vertical-align: bottom;  
+        text-decoration: underline;    
+      }
+  </style>
+<script type="text/javascript">
+    var pdata;
+    $(document).ready(() => {
+        //alert("JQuery is working");
+        //$('#template').appendTo('body');
+        pdata = processData();
+
+        $("#ac-course").autocomplete({
+            source: pdata,
+            minLength: 2,
+            select: function (event, ui) {
+                log("Selected: " + ui.item.value + " aka " + ui.item.id);
+            }
+        });
+
+        //processData();
+        generateCTF();
+
+
+
+    });
+
+    console.log(pdata);
+
+    function processData(){
+        var promise = $.getJSON("/CTF.json");
+
+        promise.done(function (data) {
+            p = [];
+            $.each(data, function (i, course) {
+                
+                course['id'] = i;
+                course['value'] = course.course;
+
+                p.push(course)
+            });
+
+            return p;
+        });
+
+        
+    }
+
+
+    function generateCTF() {
+            var pg = 0
+
+            $('#gen').append($('#template').html());
+
+            var promise = $.getJSON("/CTF.json");
+            promise.done(function (data) {
+                //console.log(data);
+                
+                var courses = _.filter(data, function (c) {
+                    if (c.code.substr(0, 3) == "CSC" && (Number(c.code.substr(3, 1) < 5) || c.code.substr(3, 1) == "L")) {
+                        return c;
+                    }
+                });
+                console.log(courses);
+
+                $.each(courses, function (i, course) {
+                    //console.log(course)
+                    row = `
+                        <tr>
+                        <td class="cntr">
+                            <p>${i + 1}. &nbsp;</p>
+                        </td>
+                        <td class="cntr">
+                            &nbsp;${course.code}
+                        </td>
+                        <td width="170" style="padding-left:3px">
+                            ${course.course}
+                        </td>
+                        <td class="cntr">
+                            ${course.theory}, ${course.lab} 
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="cntr" >
+                            <p>${course.code}</p>
+                        </td>
+                        <td width="170" style="padding-left:3px">
+                            ${course.course}
+                        </td>
+                        <td class="cntr">&nbsp;Exempt</td>
+                        <td>&nbsp;</td>
+                    </tr>`
+
+                    $('#gen div #tblMain:eq(' + pg + ') tbody').append(row);
+
+                    if ((i + 1) % 10 == 0) {
+                        console.log(i)
+                        $('#gen').append($('#template').html());
+                        pg++;
+                    }
+
+                });
+
+                l = (parseInt(courses.length / 10) + 1) * 10 - courses.length
+
+                var t =
+                    `${Array(l).join(0).split(0).map((item, c) => `
+                    <tr>
+                        <td class="cntr">
+                            <p>${courses.length + (c + 1)}. &nbsp;</p>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td width="170">
+                            
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>
+                            <p></p>
+                        </td>
+                        <td width="170"></td>
+                        <td class="cntr">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                `).join('')}`
+
+                $('#gen div #tblMain:eq(' + pg + ') tbody').append(t);
+            });
+        }
+
+
+</script>
+</head>
+
+<body>
+
+        <!-- <table>
+            <tbody>
+                <tr>
+                    <td class="logo pad" width="133">
+                            SZABIST
+                    </td>
+                    <td class="CTFHd pad" width="579" >
+                        COURSE TRANSFER REQUEST FORM
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="spc f-nr ">&nbsp;</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td width="110" class="fld pad mar f-nr">Student’s Name:</td>
+                    <td class="tdx">
+                        <input type="text" id="fstudentname" style="width: 262px" class="txt mar f-nr"
+                            value="Muhammad Shahzad Haroon">
+                    </td>
+                    <td width="60" class="fld pad mar f-nr">Program:</td>
+                    <td class="tdx">
+                        <input type="text" id="fprogram" style="width: 60px" class="txt mar f-nr" value="BS/CS">
+                    </td>
+                    <td width="112" class="fld pad mar f-nr">Registration No:</td>
+                    <td class="tdx">
+                        <input type="text" id="fregno" style="width: 82px" class="txt mar f-nr" value="1912140">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="spc " style="height: 10px;">&nbsp;</p>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td width="169" class="fld pad mar f-nr">External Transfer From:</td>
+                    <td class="tdx">
+                        <input type="text"  id="fexternal" style="width: 396px" class="txt mar f-nr"
+                            value="">
+                    </td>
+                    <td width="147" class="fld pad mar f-nr">University / Institute</td>
+        
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="spc" style="height: 6px;">&nbsp;</p>
+        <p class="fld pad spc f-nr" style="font-weight: 700">SZABIST Internal Transfer Form:</p>
+        <p class="spc" style="height: 7px;">&nbsp;</p>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td width="37" class="fld pad box tdx"></td>
+                    <td width="204" class="fld pad mar f-nr">Karachi Certificate Program</td>
+                    <td width="37" class="fld pad box tdx"></td>
+                    <td width="216" class="fld pad mar f-nr">Karachi Regular Program</td>    
+                    <td width="52" class="fld pad mar f-nr">Reg. #:</td>    
+                    <td class="tdx">
+                        <input type="text" id="fpregno" style="width: 150px;" class="txt mar f-nr" value="1912140">
+                    </td>                    
+                </tr>
+            </tbody>
+        </table>
+        <p class="spc" style="height: 10px;">&nbsp;</p>
+        <table>
+            <tbody>
+                <tr style="height: 18px">
+                    <td width="37" class="fld pad box tdx" style="height: 18px"></td>
+                    <td width="148" class="fld pad spc f-nr">Larkana Campus</td>
+                    <td width="37" class="fld pad box tdx"  style="height: 18px"></td>
+                    <td width="148" class="fld pad spc f-nr">Islamabad Campus</td>    
+                    <td width="37" class="fld pad box tdx"></td>
+                    <td width="156" class="fld pad spc f-nr">Hyderabad Campus</td>    
+                    <td width="37" class="fld pad box tdx"></td>
+                    <td width="149" class="fld pad spc f-nr">Dubai Campus</td>                     
+                </tr>
+            </tbody>
+        </table>
+        <p class="spc" style="height: 10px;">&nbsp;</p>
+
+        <table id="tblMain" class="tblMain" border="1" cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: collapse; border: 1px solid black; font-size:10.0pt;font-family:
+        'Times New Roman'">
+          <tbody>
+              <tr style="font-size:12.0pt;">
+                  <td colspan="6" class="cntr">
+                      <p>To be filled by the Student</p>
+                  </td>
+                  <td colspan="4" class="cntr">
+                      <p>To be filled by the Coordinator</p>
+                  </td>
+              </tr>
+              <tr style="font-size:10.0pt;">
+                  <td rowspan="2" class="cntr">
+                      <p>S.#</p>
+                  </td>
+                  <td colspan="2" class="cntr">
+                      <p>Course Done</p>
+                  </td>
+                  <td rowspan="2" class="cntr">
+                      Credit<br>
+                      Hours
+                  </td>
+                  <td rowspan="2" class="cntr">
+                      <p>Grade</p>
+                  </td>
+                  <td rowspan="2" class="cntr">
+                      <p>%</p>
+                  </td>
+                  <td colspan="2" class="cntr">
+                      <p>Equivalent SZABIST Course</p>
+                  </td>
+                  <td class="cntr">
+                      <p>To Do /</p>
+                  </td>
+                  <td class="cntr">
+                      <p>Semester</p>
+                  </td>
+              </tr>
+              <tr style="font-size:10.0pt;">
+                  <td class="cntr">
+                      <p>Crs. Code</p>
+                  </td>
+                  <td class="cntr" width="170">
+                    <p>Course</p>
+                  </td>
+                  <td class="cntr">
+                      <p>Crs. Code</p>
+                  </td>
+                  <td class="cntr" width="170">
+                      <p>Course</p>
+                  </td>
+                  <td class="cntr">
+                      <p>Exempt</p>
+                  </td>
+                  <td class="cntr">
+                      <p>(tentative)</p>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="cntr">
+                    
+                  </td>
+                  <td style="width: 177px;" class="cntr">
+                    <input type="text" id="ac-code" style="width: 80px;" >
+                  </td>
+                  <td style="width: 170px;" class="cntr">
+                    <input type="text" id="ac-course" style="width: 160px;">
+                  </td>
+                  <td style="width: 112px;" class="cntr">
+                    <input type="text" id="ac-crhr" style="width: 50px;" >
+                  </td>
+                  <td style="width: 109px;" class="cntr">
+                    <input type="text" id="ac-grade" style="width: 50px;" >
+                  </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td style="width: 170px;" class="cntr">
+                    <input type="text" id="ac-exempt" style="width: 160px;">
+                  </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+              </tr>
+        
+          </tbody>
+        </table> -->
+    
+
+<div id="gen"></div>    
+<div id="template" style="border: 1px solid green; display: none">
+<div class="WordSection1">
+<table class="MsoNormalTable" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+ <tbody><tr >
+  <td width="133" valign="top" style="width:99.9pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal">
+  <span lang="EN-US" style="font-size:25.0pt;font-weight: bold;font-family:'Bazooka'">SZABIST</span>
+  <!-- <span ><img width="110" height="27" id="_x0000_i1026" src="images/image001.png"></span> -->
+</p>
+  </td>
+  <td width="579" valign="bottom" style="width:434.25pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><u><span lang="EN-US" style="font-size:
+  14.0pt;font-family:'Times New Roman';">COURSE
+  TRANSFER REQUEST FORM</span></u></p>
+  </td>
+ </tr>
+</tbody></table>
+
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+ <tbody><tr>
+  <td width="110" valign="bottom" style="padding:0in 2pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Student’s
+  Name:</span></p>
+  </td>
+  <td width="262" valign="bottom"  class="cntr" style="border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Centaur'">Muhammad Shahzad Haroon</span></p>
+  </td>
+  <td width="60" valign="bottom" style="padding:0in 2pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Program:</span></p>
+  </td>
+  <td width="60" valign="bottom" class="cntr" style="border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Centaur'">BS/CS</span></p>
+  </td>
+  <td width="110" valign="bottom" style="padding:0in 0pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Registration
+  No.:</span></p>
+  </td>
+  <td width="66" valign="bottom" class="cntr" style="border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Centaur'">1912140</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:7.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+ <tbody><tr>
+  <td width="169" valign="bottom" style="width:126.9pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">External
+  Transfer From:</span></p>
+  </td>
+  <td width="396" valign="bottom" style="width:297.0pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="147" valign="bottom" style="width:110.25pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">University
+  / Institute</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:4.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">SZABIST
+Internal Transfer Form:</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:5.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="720" style="width:7.5in;border-collapse:collapse">
+ <tbody><tr>
+  <td width="37" valign="bottom" style="border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="204" valign="bottom" style="width:153.0pt;border:none;border-right:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Karachi
+  Certificate Program</span></p>
+  </td>
+  <td width="37" valign="bottom" style="border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-size:12.0pt;
+  font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="216" valign="bottom" style="width:2.25in;border:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Karachi
+  Regular Program</span></p>
+  </td>
+  <td width="52" valign="bottom" style="padding:0in 0pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Reg.
+  #:</span></p>
+  </td>
+  <td width="150" valign="bottom" style="width:112.5pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:7.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="760" style="border-collapse:collapse">
+ <tbody><tr>
+  <td width="37" valign="bottom" style="border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="148" valign="bottom" style="border:none;border-right:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Larkana
+  Campus</span></p>
+  </td>
+  <td width="37" valign="bottom" style="border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="148" valign="bottom" style="border:none;border-right:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Islamabad
+  Campus</span></p>
+  </td>
+  <td width="37" valign="bottom" style="border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="text-align:center; margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-weight: bold;font-family:Wingdings2">P</span></p>
+  </td>
+  <td width="156" valign="bottom" style="width:117.0pt;border:none;border-right:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Hyderabad
+  Campus</span></p>
+  </td>
+  <td width="37" valign="bottom" style="width:27.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="149" valign="bottom" style="width:1.55in;border:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">Dubai
+  Campus</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:7.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<table id="tblMain" class="tblMain" border="1" cellspacing="0" cellpadding="0" style="width: 100%; border-collapse: collapse; border: 1px solid black; font-size:10.0pt;font-family:
+'Times New Roman'">
+  <tbody>
+      <tr style="font-size:12.0pt;">
+          <td colspan="6" class="cntr">
+              <p>To be filled by the Student</p>
+          </td>
+          <td colspan="4" class="cntr">
+              <p>To be filled by the Coordinator</p>
+          </td>
+      </tr>
+      <tr style="font-size:10.0pt;">
+          <td rowspan="2" class="cntr">
+              <p>S.#</p>
+          </td>
+          <td colspan="2" class="cntr">
+              <p>Course Done</p>
+          </td>
+          <td rowspan="2" class="cntr">
+              Credit<br>
+              Hours
+          </td>
+          <td rowspan="2" class="cntr">
+              <p>Grade</p>
+          </td>
+          <td rowspan="2" class="cntr">
+              <p>%</p>
+          </td>
+          <td colspan="2" class="cntr">
+              <p>Equivalent SZABIST Course</p>
+          </td>
+          <td class="cntr">
+              <p>To Do /</p>
+          </td>
+          <td class="cntr">
+              <p>Semester</p>
+          </td>
+      </tr>
+      <tr style="font-size:10.0pt;">
+          <td class="cntr">
+              <p>Crs. Code</p>
+          </td>
+          <td class="cntr" width="170">
+            <p>Course</p>
+          </td>
+          <td class="cntr">
+              <p>Crs. Code</p>
+          </td>
+          <td class="cntr" width="170">
+              <p>Course</p>
+          </td>
+          <td class="cntr">
+              <p>Exempt</p>
+          </td>
+          <td class="cntr">
+              <p>(tentative)</p>
+          </td>
+      </tr>
+      <!-- <tr>
+          <td class="cntr">
+              <p>1. &nbsp;</p>
+          </td>
+          <td>
+              &nbsp;CSC 1105
+          </td>
+          <td width="170">
+              Islamiat and Pakistan Studies / Humanities (3, 0)
+          </td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>
+              <p>CSC 1105</p>
+          </td>
+          <td width="170">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+      </tr> -->
+
+  </tbody>
+</table>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:12.0pt;font-family:'Times New Roman'">&nbsp;&nbsp;
+</span></p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+ <tbody><tr>
+  <td width="181" valign="bottom" style="width:135.9pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">Student
+  Signature &amp; Date</span></p>
+  </td>
+  <td width="531" valign="bottom" style="width:398.25pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" align="center" style="margin-bottom:6.0pt;text-align:center;
+line-height:normal"><b><span lang="EN-US" style="font-family:'Times New Roman'">For
+Official Use Only</span></b></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="748" style="border-collapse:collapse">
+ <tbody><tr>
+  <td width="241" valign="bottom" style="width:180.9pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">Total
+  Number of Courses Transferred:</span></p>
+  </td>
+  <td width="198" valign="bottom" style="width:148.5pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-family:
+  'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="168" valign="bottom" style="width:1.75in;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">Total
+  Credits Transferred:</span></p>
+  </td>
+  <td width="108" valign="bottom" style="width:81.0pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-family:
+  'Times New Roman'">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:7.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="748" style="border-collapse:collapse">
+ <tbody><tr>
+  <td width="283" valign="bottom" style="width:2.95in;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">No. of
+  Courses to be completed at SZABIST:</span></p>
+  </td>
+  <td width="84" valign="bottom" style="width:63.0pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-family:
+  'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="282" valign="bottom" style="width:211.5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-top:0in;margin-right:-5.4pt;margin-bottom:
+  0in;margin-left:0in;margin-bottom:.0001pt;line-height:normal"><span lang="EN-US" style="font-family:'Times New Roman'">No. of Credits to be
+  completed at SZABIST:</span></p>
+  </td>
+  <td width="66" valign="bottom" style="width:49.5pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-family:
+  'Times New Roman'">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;line-height:normal"><span lang="EN-US" style="font-size:7.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+ <tbody><tr>
+  <td width="61" valign="bottom" style="width:45.9pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">Comments:</span></p>
+  </td>
+  <td width="651" valign="bottom" style="width:488.25pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;line-height:normal"><span lang="EN-US" style="font-size:7.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;line-height:normal"><span lang="EN-US" style="font-size:7.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+ <tbody><tr>
+  <td width="145" valign="bottom" style="width:108.9pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-size:8.0pt;
+  font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="90" valign="bottom" style="padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-size:8.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="204" valign="bottom" style="width:153.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-size:8.0pt;
+  font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="90" valign="bottom" style="padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="right" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal"><span lang="EN-US" style="font-size:10.0pt;
+  font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="183" valign="bottom" style="width:137.25pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-size:8.0pt;
+  font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="145" valign="bottom" style="width:108.9pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-family:
+  'Times New Roman'">Program Manager</span></p>
+  <p class="MsoNormal" align="center" style="margin-bottom:2.0pt;text-align:center;
+  line-height:normal"><span lang="EN-US" style="font-family:'Times New Roman'">Signature
+  &amp; Date</span></p>
+  </td>
+  <td width="90" valign="bottom" style="border:none;border-bottom:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="204" valign="bottom" style="width:153.0pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-family:
+  'Times New Roman'">Program Dean / Head of Dept.</span></p>
+  <p class="MsoNormal" align="center" style="margin-bottom:2.0pt;text-align:center;
+  line-height:normal"><span lang="EN-US" style="font-family:'Times New Roman'">Signature
+  &amp; Date</span></p>
+  </td>
+  <td width="90" valign="bottom" style="border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="183" valign="bottom" style="width:137.25pt;border-top:solid windowtext 1.0pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:none;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-family:
+  'Times New Roman'">Senior Manager Admissions</span></p>
+  <p class="MsoNormal" align="center" style="margin-bottom:2.0pt;text-align:center;
+  line-height:normal"><span lang="EN-US" style="font-family:'Times New Roman'">Signature
+  &amp; Date</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;line-height:normal"><span lang="EN-US" style="font-size:7.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;line-height:normal">
+
+
+
+<span lang="EN-US" style="font-size:7.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:collapse">
+ <tbody><tr>
+  <td width="174" valign="bottom" style="width:130.5pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="209" valign="bottom" style="width:156.65pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="158" valign="bottom" style="width:118.75pt;padding:0in 5.4pt 0in 5.4pt"><br clear="ALL">
+  <p class="MsoNormal" align="right" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:right;line-height:normal"><b><span lang="EN-US" style="font-family:
+  'Times New Roman'">Records Updated:</span></b></p>
+  </td>
+  <td width="174" valign="bottom" style="width:130.5pt;border:none;border-bottom:
+  solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="174" valign="bottom" style="width:130.5pt;border:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-family:
+  'Times New Roman'">Vice President Academics</span></p>
+  <p class="MsoNormal" align="center" style="margin-bottom:1.0pt;text-align:center;
+  line-height:normal"><span lang="EN-US" style="font-family:'Times New Roman'">Signature
+  &amp; Date</span></p>
+  </td>
+  <td width="209" valign="bottom" style="width:156.65pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="158" valign="bottom" style="width:118.75pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+  normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+  </td>
+  <td width="174" valign="bottom" style="width:130.5pt;border:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span lang="EN-US" style="font-family:'Times New Roman'">Record Controller</span></p>
+  <p class="MsoNormal" align="center" style="margin-bottom:1.0pt;text-align:center;
+  line-height:normal"><span lang="EN-US" style="font-family:'Times New Roman'">Signature
+  &amp; Date</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US" style="font-size:5.0pt;font-family:'Times New Roman'">&nbsp;</span></b></p>
+
+
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US" style="font-family:'Times New Roman'">Attach
+the following Documents:</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.2in;margin-bottom:.0001pt;text-indent:.05in;line-height:normal"><span lang="EN-US" style="font-family:Wingdings;font-size: 7px;">n<span style="font:7.0pt 'Times New Roman'">&nbsp;
+</span></span><span dir="LTR"></span><span lang="EN-US" style="font-family:'Times New Roman'">Copy
+of the Last Transcript</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.2in;margin-bottom:.0001pt;text-indent:.05in;line-height:normal"><span lang="EN-US" style="font-family:Wingdings;font-size: 7px;">n<span style="font:7.0pt 'Times New Roman'">&nbsp;
+</span></span><span dir="LTR"></span><span lang="EN-US" style="font-family:'Times New Roman'">Course
+Outlines of all transfer courses requested</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span lang="EN-US" style="font-size:5.0pt;font-family:'Times New Roman'">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><b><span lang="EN-US" style="font-family:'Times New Roman'">Note:</span></b></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.2in;margin-bottom:.0001pt;text-indent:.05in;line-height:normal"><span lang="EN-US" style="font-family:Wingdings;font-size: 7px;">n<span style="font:7.0pt 'Times New Roman'">&nbsp;
+</span></span><span dir="LTR"></span><span lang="EN-US" style="font-family:'Times New Roman'">Submit
+this form to Admission office.</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.2in;margin-bottom:.0001pt;text-indent:.05in;line-height:normal"><span lang="EN-US" style="font-family:Wingdings;font-size: 7px;">n<span style="font:7.0pt 'Times New Roman'">&nbsp;
+</span></span><span dir="LTR"></span><span lang="EN-US" style="font-family:'Times New Roman'">The
+student may be asked to do additional courses; incase the degree requirement
+change in future</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.2in;margin-bottom:.0001pt;text-indent:.05in;line-height:normal"><span lang="EN-US" style="font-family:Wingdings;font-size: 7px;">n<span style="font:7.0pt 'Times New Roman'">&nbsp;
+</span></span><span dir="LTR"></span><span lang="EN-US" style="font-family:'Times New Roman'">For
+internal transfer, D and above grade can be considered</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.2in;margin-bottom:.0001pt;text-indent:.05in;line-height:normal"><span lang="EN-US" style="font-family:Wingdings;font-size: 7px;">n<span style="font:7.0pt 'Times New Roman'">&nbsp;
+</span></span><span dir="LTR"></span><span lang="EN-US" style="font-family:'Times New Roman'">For
+transfer of course, course titles and course contents should match</span></p>
+
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;line-height:normal"><span lang="EN-US" style="font-family:'Times New Roman'">&nbsp;</span></p>
+<p class="rev" dir="rtl">Revised - May 2, 2018</p>
+<p style="page-break-after: always"></p>
+
+</div>
+</div>
+
+</body>
+
+</html>
